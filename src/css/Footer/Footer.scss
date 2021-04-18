@@ -1,0 +1,35 @@
+.page-container{
+    position: relative;
+    min-height: 77vh;
+    padding-bottom: 15em;
+  }
+  
+
+.footer-container{
+    background: $base-color;
+    border-top: 5px solid $primary-color;
+    padding: 2em;
+    color: $inverted-text-color;
+    margin-top: 5em;
+    position: absolute;
+    bottom: 0;
+    width: 95.4%;
+}
+
+.footer-inner{
+    display:flex; 
+    justify-content: space-around;
+    &__left-col{
+        flex-basis: 50%;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 50%;
+            list-style: none;
+        }
+    }
+    &__right-col{
+        flex-basis: 50%;
+    }
+}

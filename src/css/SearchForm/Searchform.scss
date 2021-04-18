@@ -1,0 +1,26 @@
+.search-form{
+    display: flex;
+    flex-direction: column;
+    &__label{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;;
+        position: relative;
+        input{
+            width: 50%;
+            height: 2em;
+            font-size: 1.4em;
+            font-family: $base-font-family;
+            padding-left: 1em;
+            color: $base-color;
+        }
+        &::before{
+            content: "£";
+            position: absolute;
+            top: 35px;
+            left:5px;
+            font-size: 1.1em;
+            color: darken($primary-color, 5%);
+        }
+    }
+}

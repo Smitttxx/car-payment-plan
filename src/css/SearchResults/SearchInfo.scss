@@ -1,0 +1,29 @@
+.search-info {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+  border: 5px solid $base-color;
+  border-left: 0;
+  border-right: 0;
+  margin: 0 1em;
+  &__title {
+    padding: 1em;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    span {
+      &:nth-child(odd) {
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      &:nth-child(even) {
+        font-size: 1.2em;
+        color: darken($primary-color, 2%);
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}

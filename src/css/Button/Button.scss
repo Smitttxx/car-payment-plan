@@ -1,0 +1,29 @@
+.button{
+    padding: 1em;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: $base-font-family;
+    margin-top:1em;
+    &--primary{
+        @extend .button;
+        background: $base-color;
+        border-left: 5px solid $primary-color;
+        color: $inverted-text-color;
+        &:hover{
+            color: $primary-color;
+            background-color: darken($base-color, 20%);
+        }
+    }
+    &--secondary{
+        @extend .button;
+        background: $primary-color;
+        border-left: 5px solid $base-color;
+        color: $base-color;
+        &:hover{
+            color: $base-color;
+            background-color: lighten($primary-color, 20%);
+        }
+    }
+}

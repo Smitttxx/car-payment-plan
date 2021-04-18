@@ -1,0 +1,37 @@
+
+    
+.header {
+    &-container{
+        position: sticky;
+        top: 0;
+        background-color: $base-color;
+        border-bottom: 5px solid $primary-color;
+    }
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        color: $inverted-text-color
+    }
+    &--logo {
+        width: 100px;
+    }
+    &--nav{
+    display: flex;
+    align-items: center;
+        a{
+            color: $inverted-text-color;
+            margin: 0px 1em; 
+            text-decoration: none;
+            padding: 0.5em;
+            &:hover{
+                color: $primary-color;
+                text-decoration: underline;
+                font-weight: bold;
+                background-color: darken($base-color, 20%);
+            }
+        }
+    }
+}
+
+
+

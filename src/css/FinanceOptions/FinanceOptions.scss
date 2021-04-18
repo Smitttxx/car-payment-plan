@@ -1,0 +1,41 @@
+.finance-table {
+  display: flex;
+  span{
+    flex-basis: 33%;
+    font-weight: bold;
+  }
+  &-item {
+    display: flex;
+    div{
+      flex-basis: 33%;
+    }
+    &:nth-child(odd) {
+      background-color: lighten($primary-color, 40%);
+    }
+  }
+}
+
+.finance-info{
+  columns: 2;
+  line-height: 2em;
+  padding: 1em; 
+  border-top: 5px solid $primary-color;
+  border-bottom: 5px solid $primary-color;
+  margin-bottom: 2em;
+  &__item{
+    display: flex;
+    span {
+      &:nth-child(odd) {
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      &:nth-child(even) {
+        font-size: 1.2em;
+        color: $base-color;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding-left: 0.5em;
+      }
+    }
+  }
+}

@@ -1,10 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+:heavy_check_mark: Prerequisites 
 
-## Available Scripts
+Before you continue, ensure you have met the following requirements:
 
-In the project directory, you can run:
+* You have ran npm install
+* You have a plug in called Moesif Origin and CORS Changer on chrome for CORS 
+
+
+This Application was created as part of a code test for Arnold Clark. 
+
+:girl: Created by : Laura Smith
+
+:pushpin: Uses :- 
+    "enzyme": "^3.11.0",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+
+
+:green_book: Project Criteria :- 
+
+The application should allow the Product Consultant to input a vehicle price, deposit amount, delivery date, and select from 1, 2, or 3-year finance options.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\projectInputs.JPG)
+The completed application should calculate and display a quote showing a summary of the loan and a payment schedule showing monthly payments with date and amount due.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\quotePayment.JPG)
+There is a minimum 15% deposit based on the vehicle price.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\depositValidation.JPG)
+On the first month’s payment add an £88 arrangement fee, and on the last a £20 completion fee.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\paymentFees.JPG)
+Payments are due on the first day of each month, beginning the month after delivery.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\firstOfEachMonth.JPG)
+Display the top six vehicles which may be affordable based on the monthly payments This will return a JSON response. Were most interested in the `searchResults` array.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\searchResults.JPG)
+
+
+We’d like you to use React. On top of that, use whatever frontend libraries and tooling you feel comfortable with. We are interested in modern, clean coding principles, unit tests, advocating for the user in terms of UI/UX, demonstrating semantically correct and accessible HTML, and a maintainable approach to CSS.
+![Image of projectInputs](arnold-clark-code-test\src\ProjectCriteriaImages\footer.JPG)
+
 
 ### `npm start`
 
@@ -13,58 +45,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
