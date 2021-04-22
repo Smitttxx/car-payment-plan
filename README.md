@@ -45,7 +45,7 @@ The below spec was provided by Arnold Clark - I have attatched screenshots of th
 
     * ![Image of firstOfEachMonth](src/ProjectCriteriaImages/firstOfEachMonth.JPG)
 
-* Display the top six vehicles which may be affordable based on the monthly payments This will return a JSON response. Were most interested in the `searchResults` array.
+* Display the top vehicles which may be affordable based on the monthly payments This will return a JSON response. Were most interested in the `searchResults` array.
 
     * ![Image of searchResults](src/ProjectCriteriaImages/searchResults.JPG)
 
