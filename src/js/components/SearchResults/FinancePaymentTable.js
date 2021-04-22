@@ -20,8 +20,8 @@ const FinancePaymentTable = (props) => {
         Math.round(
           (monthlyUpdateAmount - firstPayment + Number.EPSILON) * 100
         ) / 100;
-      var date = new Date(deliveryDate);
-      var firstDay = new Date(
+      let date = new Date(deliveryDate);
+      let firstDay = new Date(
         date.getFullYear(),
         date.getMonth() + counter + 1,
         1
@@ -39,8 +39,8 @@ const FinancePaymentTable = (props) => {
       monthlyUpdateAmount =
         Math.round((monthlyUpdateAmount - lastPayment + Number.EPSILON) * 100) /
         100;
-      var date = new Date(deliveryDate);
-      var firstDay = new Date(
+      let date = new Date(deliveryDate);
+      let firstDay = new Date(
         date.getFullYear(),
         date.getMonth() + counter + 1,
         1
@@ -59,8 +59,8 @@ const FinancePaymentTable = (props) => {
         Math.round(
           (monthlyUpdateAmount - monthlyPayment + Number.EPSILON) * 100
         ) / 100;
-      var date = new Date(deliveryDate);
-      var firstDay = new Date(
+      let date = new Date(deliveryDate);
+      let firstDay = new Date(
         date.getFullYear(),
         date.getMonth() + counter + 1,
         1

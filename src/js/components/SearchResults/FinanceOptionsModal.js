@@ -14,8 +14,8 @@ const FinanceOptionsModal = (props) => {
     .slice(0, 4)
     .join(" ");
   const financeOption = state.financeOption.financeOption;
-  let arrangementFee = 88;
-  let completionFee = 20;
+  const arrangementFee = 88;
+  const completionFee = 20;
   let numberOfPayments = 12;
   let loanAmount = 0;
   let monthlyPayment = 0;
@@ -58,7 +58,12 @@ const FinanceOptionsModal = (props) => {
               <div className="finance-info__item"><span>Last Payment (Including £{completionFee} completion fee): </span><span>£{lastPayment}</span></div>
               <div className="finance-info__item"><span>Total Loan Amount Including Charges: </span><span>£{totalLoanAmountIncludingCharges}</span></div>
               </div>
-      <FinancePaymentTable totalLoanAmountIncludingCharges={totalLoanAmountIncludingCharges}  firstPayment={firstPayment} lastPayment={lastPayment} averagePayments={averagePayments} monthlyPayment={monthlyPayment} deliveryDate={deliveryDate}/>
+      <FinancePaymentTable 
+      totalLoanAmountIncludingCharges={totalLoanAmountIncludingCharges}  
+      firstPayment={firstPayment} lastPayment={lastPayment} 
+      averagePayments={averagePayments} 
+      monthlyPayment={monthlyPayment} 
+      deliveryDate={deliveryDate}/>
     <div> </div>
 
     </Fragment>
