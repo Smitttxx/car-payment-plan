@@ -8,7 +8,9 @@ const GenericList = (props) => {
 
     return (
             <div className="homepage-info">
-                <h3>{headerText}</h3>
+                <h3>
+                    {headerText}
+                </h3>
                 <ul>
                     <GenericListItem ListItems={ListItems}/>
                 </ul>
